@@ -1,3 +1,99 @@
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+paginate = 20
+enableEmoji = true
+title = "Airscript"
+languageCode = "en"
+theme = "hugo-coder"
+pygmentsStyle = "bw"
+pygmentsCodeFences = true
+defaultContentLanguage = "en"
+baseURL = "https://airscript.it"
+pygmentsCodeFencesGuessSyntax = true
+
+[params]
+rtl = false
+customJS = []
+customCSS = []
+customSCSS = []
+customRemoteJS = []
+maxSeeAlsoItems = 5
+author = "Airscript"
+colorScheme = "auto"
+info = ["Software Engineer"]
+hideColorSchemeToggle = false
+dateFormat = "January 1, 1970"
+avatarURL = "images/avatar.jpg"
+description = "Sharing happiness with code."
+keywords = "home,airscript,airscripts,software,engineering,developer"
+
+[taxonomies]
+tag = "tags"
+author = "authors"
+category = "categories"
+
+[[params.social]]
+weight = 1
+name = "Github"
+icon = "fa fa-2x fa-github"
+url = "https://github.com/airscripts"
+
+[[params.social]]
+weight = 2
+name = "GitLab"
+icon = "fa fa-2x fa-gitlab"
+url = "https://gitlab.com/airscripts/"
+
+[[params.social]]
+weight = 3
+name = "Twitter"
+icon = "fa fa-2x fa-twitter"
+url = "https://twitter.com/airscript/"
+
+[[params.social]]
+weight = 4
+name = "LinkedIn"
+icon = "fa fa-2x fa-linkedin"
+url = "https://www.linkedin.com/in/airscript/"
+
+[[params.social]]
+weight = 5
+name = "RSS"
+rel = "alternate"
+icon = "fa fa-2x fa-rss"
+type = "application/rss+xml"
+url = "https://airscript.it/index.xml"
+
+[languages.en]
+languageName = "en"
+
+[[languages.en.menu.main]]
+weight = 1
+name = "About"
+url = "about/"
+
+[[languages.en.menu.main]]
+weight = 2
+name = "Blog"
+url = "https://blog.airscript.it"
+
+[[languages.en.menu.main]]
+weight = 3
+name = "Projects"
+url = "https://github.com/airscripts?tab=repositories"
+
+[languages.it]
+languageName = "it"
+
+[[languages.it.menu.main]]
+weight = 1
+name = "About"
+url = "about/"
+
+[[languages.it.menu.main]]
+weight = 2
+name = "Blog"
+url = "https://blog.airscript.it"
+
+[[languages.it.menu.main]]
+weight = 3
+name = "Projects"
+url = "https://github.com/airscripts?tab=repositories"
