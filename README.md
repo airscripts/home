@@ -21,4 +21,4 @@ Choose what you find more suitable for you:
 - [Support me via linktr.ee](https://linktr.ee/airscript)
 
 ## 💳 License  
-This repository is licensed under [GPL-3.0 License](https://github.com/Airscripts/emdees/blob/main/LICENSE).
+This repository is licensed under [MIT License](https://github.com/Airscripts/emdees/blob/main/LICENSE).
