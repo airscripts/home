@@ -2,7 +2,7 @@
 set -e
 
 if [ "$1" = 'hugo' ]; then
-  hugo server --bind $BLOG_INTERFACE --port $BLOG_PORT
+  hugo server --bind $HOME_INTERFACE --port $HOME_PORT
 
 else 
   exec "$@"
