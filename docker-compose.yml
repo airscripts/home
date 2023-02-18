@@ -1,0 +1,26 @@
+version: "3.9"
+
+services:
+  home: 
+    tty: true
+    restart: always
+    container_name: home
+    image: airscript/home:compose
+
+    ports:
+      - "25001:25001/tcp"
+
+    volumes:
+      - .:/home
+
+    networks:
+      default:
+        aliases:
+          - airnet
+
+    build:
+      context: .
+      dockerfile: ".docker/dockerfiles/home.Dockerfile"
+
+      args:
+        HOME_BUILD_ENVIRONMENT: compose
