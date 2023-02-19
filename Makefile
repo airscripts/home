@@ -29,3 +29,15 @@ install-npm:
 .PHONY: install-netlify-cli
 install-netlify-cli:
 	bash ./scripts/install/netlify-cli.sh
+
+.PHONY: ci-verify
+ci-verify:
+	bash ./scripts/ci/verify.sh $(environment)
+
+.PHONY: ci-build
+ci-build:
+	bash ./scripts/ci/build.sh
+
+.PHONY: ci-deploy
+ci-deploy:
+	bash ./scripts/ci/deploy.sh $(id) $(token)
