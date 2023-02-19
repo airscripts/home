@@ -1,0 +1,203 @@
+version: 2.1
+
+parameters:
+  verify:
+    type: boolean
+    default: true
+
+  build:
+    type: boolean
+    default: false
+
+  deploy:
+    type: boolean
+    default: true
+
+executors:
+  base:
+    docker:
+      - image: alpine:3.17
+
+commands:
+  setup:
+    steps:
+      - run:
+          name: Setup
+
+          command: |
+            sh scripts/update.sh
+            sh scripts/install/bash.sh
+            bash scripts/install/make.sh
+
+  setup-git:
+    steps:
+      - install-git
+
+      - run:
+          name: Setup Git
+          command: make submodules environment=$CI_ENVIRONMENT
+
+  setup-netlify:
+    steps:
+      - install-npm
+      - install-netlify-cli
+
+  install-git:
+    steps:
+      - run:
+          name: "Install Git"
+          command: make install-git environment=$CI_ENVIRONMENT
+
+  install-npm:
+    steps:
+      - run:
+          name: Install npm
+          command: make install-npm
+
+  install-hugo:
+    steps:
+      - run:
+          name: Install Hugo
+          command: make install-hugo
+
+  install-netlify-cli:
+    steps:
+      - run:
+          name: Install Netlify CLI
+          command: make install-netlify-cli
+
+jobs:
+  verify:
+    executor: base
+    resource_class: small
+
+    steps:
+      - checkout
+      - setup
+
+      - run:
+          name: Verify Base
+          command: make ci-verify environment=base
+
+  verify-build:
+    executor: base
+    resource_class: small
+
+    steps:
+      - checkout
+      - setup
+      - setup-git
+      - install-hugo
+
+      - run:
+          name: Verify Build
+          command: make ci-verify environment=build
+  
+  verify-deploy:
+    executor: base
+    resource_class: small
+
+    steps:
+      - checkout
+      - setup
+      - setup-netlify
+
+      - run:
+          name: Verify Deploy
+          command: make ci-verify environment=deploy
+
+  build:
+    executor: base
+    resource_class: medium
+
+    steps:
+      - checkout
+      - setup
+      - setup-git
+      - install-hugo
+      
+      - run:
+          name: Build Site
+          command: make ci-build
+
+      - when:
+          condition: 
+            equal: [ main, << pipeline.git.branch >>]
+
+          steps:
+            - persist_to_workspace:
+                root: .
+
+                paths:
+                  - ./public
+
+  deploy:
+    executor: base
+    resource_class: small
+
+    steps:
+      - checkout
+      - setup
+      - setup-netlify
+
+      - attach_workspace:
+          at: .
+      
+      - run:
+          name: Deploy To Netlify
+          command: >
+            make ci-deploy 
+            id=$NETLIFY_SITE_ID 
+            token=$NETLIFY_ACCESS_TOKEN
+
+workflows:
+  verify:
+    when: << pipeline.parameters.verify >>
+
+    jobs:
+      - verify
+
+  build:
+    when: << pipeline.parameters.build >>
+
+    jobs:
+      - verify-build
+
+      - build:
+          requires:
+            - verify-build
+
+  deploy:
+    when: << pipeline.parameters.deploy >>
+
+    jobs:
+      - verify-build:
+          filters:
+            branches:
+              only:
+                - main
+
+      - build:
+          requires:
+            - verify-build
+
+          filters:
+            branches:
+              only:
+                - main
+
+      - verify-deploy:
+          filters:
+            branches:
+              only:
+                - main
+
+      - deploy:
+          requires:
+            - build
+            - verify-deploy
+
+          filters:
+              branches:
+                only:
+                  - main
