@@ -21,3 +21,7 @@ install-hugo:
 .PHONY: install-git
 install-git:
 	bash ./scripts/install/git.sh $(environment)
+
+.PHONY: install-netlify-cli
+install-netlify-cli:
+	bash ./scripts/install/netlify-cli.sh
