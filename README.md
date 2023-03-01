@@ -1,5 +1,5 @@
 # 🪶 Home
-[![CircleCI](https://dl.circleci.com/status-badge/img/gh/airscripts/home/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/airscripts/home/tree/main)
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/airscripts/home/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/airscripts/home/tree/main) [![Netlify Status](https://api.netlify.com/api/v1/badges/5eb3eb91-b54d-44e5-a45b-db480b44de08/deploy-status)](https://app.netlify.com/sites/airscripts-home/deploys)
 
 Site's core, containing all references to socials, projects and so on.
 
