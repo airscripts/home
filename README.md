@@ -1,4 +1,6 @@
 # 🪶 Home
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/airscripts/home/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/airscripts/home/tree/main)
+
 Site's core, containing all references to socials, projects and so on.
 
 ## 📦 Install
