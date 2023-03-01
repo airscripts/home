@@ -67,6 +67,7 @@ url = "https://airscript.it/index.xml"
 
 [languages.en]
 languageName = "en"
+contentDir = "content/english"
 
 [[languages.en.menu.main]]
 weight = 1
@@ -85,6 +86,7 @@ url = "https://github.com/airscripts?tab=repositories"
 
 [languages.it]
 languageName = "it"
+contentDir = "content/italian"
 
 [[languages.it.menu.main]]
 weight = 1
