@@ -22,6 +22,9 @@ info = ["Software Engineer"]
 hideColorSchemeToggle = false
 dateFormat = "January 1, 1970"
 avatarURL = "images/avatar.jpg"
+favicon_16 = "images/favicon-16x16.png"
+favicon_32 = "images/favicon-32x32.png"
+touchIcon = "images/apple-touch-icon.png"
 description = "Sharing happiness with code."
 keywords = "home,airscript,airscripts,software,engineering,developer"
 
