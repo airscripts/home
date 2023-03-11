@@ -53,17 +53,21 @@ url = "https://twitter.com/airscript/"
 
 [[params.social]]
 weight = 4
+name = "Mastodon"
+icon = "fa fa-2x fa-mastodon"
+url = "https://fosstodon.org/@airscript/"
+
+[[params.social]]
+weight = 5
 name = "LinkedIn"
 icon = "fa fa-2x fa-linkedin"
 url = "https://www.linkedin.com/in/airscript/"
 
 [[params.social]]
-weight = 5
-name = "RSS"
-rel = "alternate"
-icon = "fa fa-2x fa-rss"
-type = "application/rss+xml"
-url = "https://airscript.it/index.xml"
+weight = 6
+name = "More"
+icon = "fa fa-2x fa-link"
+url = "https://linktr.ee/airscript"
 
 [languages.en]
 languageName = "en"
