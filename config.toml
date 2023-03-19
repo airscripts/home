@@ -37,37 +37,37 @@ category = "categories"
 weight = 1
 name = "Github"
 icon = "fa fa-2x fa-github"
-url = "https://github.com/airscripts"
+url = "https://github.airscript.it"
 
 [[params.social]]
 weight = 2
 name = "GitLab"
 icon = "fa fa-2x fa-gitlab"
-url = "https://gitlab.com/airscripts/"
+url = "https://gitlab.airscript.it"
 
 [[params.social]]
 weight = 3
 name = "Twitter"
 icon = "fa fa-2x fa-twitter"
-url = "https://twitter.com/airscript/"
+url = "https://twitter.airscript.it"
 
 [[params.social]]
 weight = 4
 name = "Mastodon"
 icon = "fa fa-2x fa-mastodon"
-url = "https://fosstodon.org/@airscript/"
+url = "https://mastodon.airscript.it"
 
 [[params.social]]
 weight = 5
 name = "LinkedIn"
 icon = "fa fa-2x fa-linkedin"
-url = "https://www.linkedin.com/in/airscript/"
+url = "https://linkedin.airscript.it"
 
 [[params.social]]
 weight = 6
 name = "More"
 icon = "fa fa-2x fa-link"
-url = "https://linktr.ee/airscript"
+url = "https://linktree.airscript.it"
 
 [languages.en]
 languageName = "en"
