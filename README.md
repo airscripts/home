@@ -1,26 +1,42 @@
-# 🪶 Home
-[![CircleCI](https://dl.circleci.com/status-badge/img/gh/airscripts/home/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/airscripts/home/tree/main) [![Netlify Status](https://api.netlify.com/api/v1/badges/5eb3eb91-b54d-44e5-a45b-db480b44de08/deploy-status)](https://app.netlify.com/sites/airscripts-home/deploys)
-
+# Home
 Site's core, containing all references to socials, projects and so on.
 
-## 📦 Install
+## Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Resources](#resources)
+- [Contributing](#contributing)
+- [Support](#support)
+- [License](#license)
+
+## Installation
 Follow the steps below to make use of Home.
 
-1. Clone this repository:
+Clone this repository:
 ```bash
-git clone https://github.com/Airscripts/home.git
+git clone https://github.com/airscripts/home.git
 ```
 
-## 🤝 Contribute
+## Usage
+404
+
+## Resources
+404
+
+## Contributing
 Contributions and suggestions about how to improve this project are welcome!
+Please follow [our contribution guidelines](https://github.com/airscripts/home/blob/main/CONTRIBUTING.md).
 
-## 💚 Support
-If you want to support my work you can do it with the links below.
-
+## Support
+If you want to support my work you can do it by following me, leaving a star, sharing my projects or also donating at the links below.  
 Choose what you find more suitable for you:  
-- [Support me on GitHub](https://github.com/sponsors/Airscripts)
-- [Support me via ko-fi](https://ko-fi.com/airscript)
-- [Support me via linktr.ee](https://linktr.ee/airscript)
 
-## 💳 License  
-This repository is licensed under [MIT License](https://github.com/Airscripts/emdees/blob/main/LICENSE).
+<a href="https://sponsor.airscript.it" target="blank">
+  <img src="https://raw.githubusercontent.com/airscripts/assets/main/images/github-sponsors.svg" alt="GitHub Sponsors" width="30px" />
+</a>&nbsp;
+<a href="https://kofi.airscript.it" target="blank">
+  <img src="https://raw.githubusercontent.com/airscripts/assets/main/images/kofi.svg" alt="Kofi" width="30px" />
+</a>
+
+## License  
+This repository is licensed under [GPL-3.0 License](https://github.com/airscripts/home/blob/main/LICENSE).
