@@ -87,22 +87,3 @@ url = "https://blog.airscript.it"
 weight = 3
 name = "Projects"
 url = "https://github.com/airscripts?tab=repositories"
-
-[languages.it]
-languageName = "it"
-contentDir = "content/italian"
-
-[[languages.it.menu.main]]
-weight = 1
-name = "About"
-url = "about/"
-
-[[languages.it.menu.main]]
-weight = 2
-name = "Blog"
-url = "https://blog.airscript.it"
-
-[[languages.it.menu.main]]
-weight = 3
-name = "Projects"
-url = "https://github.com/airscripts?tab=repositories"
