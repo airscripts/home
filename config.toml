@@ -25,7 +25,7 @@ avatarURL = "images/avatar.png"
 favicon_16 = "images/favicon-16x16.png"
 favicon_32 = "images/favicon-32x32.png"
 touchIcon = "images/apple-touch-icon.png"
-description = "Sharing happiness with code."
+description = "Hey there! I'm Francesco known as Airscript on the web."
 keywords = "home,airscript,airscripts,software,engineering,developer"
 
 [taxonomies]
@@ -37,37 +37,37 @@ category = "categories"
 weight = 1
 name = "Github"
 icon = "fa fa-2x fa-github"
-url = "https://github.airscript.it"
+url = "https://github.com/airscripts"
 
 [[params.social]]
 weight = 2
 name = "GitLab"
 icon = "fa fa-2x fa-gitlab"
-url = "https://gitlab.airscript.it"
+url = "https://gitlab.com/airscripts"
 
 [[params.social]]
 weight = 3
 name = "Twitter"
 icon = "fa fa-2x fa-twitter"
-url = "https://twitter.airscript.it"
+url = "https://x.com/airscript"
 
 [[params.social]]
 weight = 4
 name = "Mastodon"
 icon = "fa fa-2x fa-mastodon"
-url = "https://mastodon.airscript.it"
+url = "https://fosstodon.org/@airscript/"
 
 [[params.social]]
 weight = 5
 name = "LinkedIn"
 icon = "fa fa-2x fa-linkedin"
-url = "https://linkedin.airscript.it"
+url = "https://www.linkedin.com/in/airscript"
 
 [[params.social]]
 weight = 6
 name = "More"
 icon = "fa fa-2x fa-link"
-url = "https://linktree.airscript.it"
+url = "https://linktr.ee/airscript"
 
 [languages.en]
 languageName = "en"
