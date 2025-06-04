@@ -7,18 +7,21 @@ categories: ["general"]
 tags: ["airscript", "about"]
 images: ["images/logo-open-graph.png"]
 summary: "About page of airscript.it where I tell, briefly, who I am."
+
 ---
-Hey.  
-I am Francesco known as **Airscript** on the web.
 
-Since childhood I have shown a strong curiosity for what was around me: video games, sports or cinematography.  
-Just to name a few of the thousands of things that fascinate me.
+## Hello World!  
+I’m Francesco, known online as **Airscript**.  
 
-Oh yes, I cannot fail to make an honorable mention of paleontology and dinosaurs in particular.
-Between you and me, I hadn't really forgotten about them; I wanted them to get the attention they deserve.
+Since I was a kid, I’ve always been curious about the world around me—videogames, sports, cinematography—just to name a few of the countless things that fascinate me.  
 
-Of all of them, though, computer science was the one that I never lost sight of.
-The possibility of being able to create tools that could improve people's lives through lines of code excited me so much that I made this interest, **passion** and later also **job**.
+Oh, and let’s not forget paleontology—especially **dinosaurs**.  
+*Between us, I didn’t really forget them. I just wanted to make sure they got the spotlight they deserve.*  
+
+But out of everything, computer science is what stuck with me the most.  
+The idea that I could build tools to improve people's lives through code got me hooked early on. What started as a spark turned into a full-blown **passion**, and eventually, my **career**.  
+
+Today, I work as a **freelance software engineer**, helping bring ideas to life through technology.  
 
 *To make something special, you just have to believe that it is special.*  
 *Mr. Ping, Kung Fu Panda*
