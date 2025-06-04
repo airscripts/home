@@ -18,10 +18,13 @@ git clone https://github.com/airscripts/home.git
 ```
 
 ## Usage
-404
+In order to spin an instance of this project, go to the root dir and type:
+```bash
+docker compose up
+```
 
 ## Resources
-404
+- Hugo Coder: https://github.com/luizdepra/hugo-coder
 
 ## Contributing
 Contributions and suggestions about how to improve this project are welcome!

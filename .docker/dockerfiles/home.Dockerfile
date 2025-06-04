@@ -1,4 +1,4 @@
-FROM alpine:3.17 AS builder
+FROM alpine:3.22 AS builder
   ARG HOME_BUILD_ENVIRONMENT=docker
   WORKDIR /home
   COPY . .
@@ -12,7 +12,7 @@ FROM alpine:3.17 AS builder
     make install-git environment=${HOME_BUILD_ENVIRONMENT} && \
     make submodules environment=${HOME_BUILD_ENVIRONMENT}
 
-FROM alpine:3.17 AS runner
+FROM alpine:3.22 AS runner
   LABEL maintainer="Airscript <francesco@airscript.it>"
   ENV HOME_PORT=25001
   ENV HOME_INTERFACE=0.0.0.0

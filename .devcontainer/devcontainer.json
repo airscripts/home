@@ -1,7 +1,7 @@
 {
   "name": "home",
   "overrideCommand": false,
-  "image": "docker:20.10.23-dind-alpine3.17",
+  "image": "docker:28.2.2-dind-alpine3.21",
   // "postCreateCommand": "sh scripts/devcontainer/setup.sh",
 
   "forwardPorts": [

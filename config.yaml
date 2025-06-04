@@ -1,0 +1,78 @@
+enableEmoji: true
+title: "Airscript"
+languageCode: "en"
+theme: "hugo-coder"
+pygmentsStyle: "bw"
+pygmentsCodeFences: true
+baseURL: "https://airscript.it"
+pygmentsCodeFencesGuessSyntax: true
+
+pagination:
+  pagerSize: 20
+
+params:
+  rtl: false
+  customJS: []
+  customCSS: []
+  customSCSS: []
+  customRemoteJS: []
+  maxSeeAlsoItems: 5
+  author: "Airscript"
+  colorScheme: "auto"
+
+  info:
+    - "Software Engineer"
+
+  hideColorSchemeToggle: false
+  dateFormat: "January 1, 1970"
+  avatarURL: "images/avatar.png"
+  favicon_16: "images/favicon-16x16.png"
+  favicon_32: "images/favicon-32x32.png"
+  touchIcon: "images/apple-touch-icon.png"
+  keywords: "home,airscript,airscripts,software,engineering,developer"
+  description: "Hey there! I'm Francesco known as Airscript on the web."
+
+  social:
+    - weight: 1
+      name: "Github"
+      icon: "fa fa-2x fa-brands fa-github"
+      url: "https://github.com/airscripts"
+
+    - weight: 2
+      name: "Telegram"
+      icon: "fa fa-2x fa-brands fa-telegram"
+      url: "https://t.me/airscript"
+
+    - weight: 3
+      name: "LinkedIn"
+      icon: "fa fa-2x fa-brands fa-linkedin"
+      url: "https://www.linkedin.com/in/airscript"
+
+    - weight: 4
+      name: "X"
+      icon: "fa fa-2x fa-brands fa-x-twitter"
+      url: "https://x.com/airscript"
+
+    - weight: 5
+      name: "More"
+      icon: "fa fa-2x fa-solid fa-link"
+      url: "https://linktr.ee/airscript"
+
+taxonomies:
+  tag: "tags"
+  author: "authors"
+  category: "categories"
+
+menu:
+  main:
+    - weight: 1
+      name: "About"
+      url: "about/"
+
+    - weight: 2
+      name: "Blog"
+      url: "https://blog.airscript.it"
+
+    - weight: 3
+      name: "Projects"
+      url: "https://github.com/airscripts?tab=repositories"
