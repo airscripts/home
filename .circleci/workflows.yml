@@ -120,16 +120,16 @@ jobs:
           name: Build Site
           command: make ci-build
 
-      - when:
-          condition: 
-            equal: [ main, << pipeline.git.branch >>]
+      # - when:
+      #     condition: 
+      #       equal: [ main, << pipeline.git.branch >>]
 
-          steps:
-            - persist_to_workspace:
-                root: .
+      #     steps:
+      #       - persist_to_workspace:
+      #           root: .
 
-                paths:
-                  - ./public
+      #           paths:
+      #             - ./public
 
   deploy:
     executor: base
@@ -138,10 +138,12 @@ jobs:
     steps:
       - checkout
       - setup
+      - setup-git
       - setup-vercel
+      - install-hugo
 
-      - attach_workspace:
-          at: .
+      # - attach_workspace:
+      #     at: .
       
       - run:
           name: Deploy To Vercel
