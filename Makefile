@@ -26,9 +26,9 @@ install-git:
 install-npm:
 	bash ./scripts/install/npm.sh
 
-.PHONY: install-netlify-cli
-install-netlify-cli:
-	bash ./scripts/install/netlify-cli.sh
+.PHONY: install-vercel-cli
+install-vercel-cli:
+	bash ./scripts/install/vercel-cli.sh
 
 .PHONY: ci-verify
 ci-verify:

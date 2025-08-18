@@ -37,10 +37,10 @@ commands:
           name: Setup Git
           command: make submodules environment=$CI_ENVIRONMENT
 
-  setup-netlify:
+  setup-vercel:
     steps:
       - install-npm
-      - install-netlify-cli
+      - install-vercel-cli
 
   install-git:
     steps:
@@ -60,11 +60,11 @@ commands:
           name: Install Hugo
           command: make install-hugo
 
-  install-netlify-cli:
+  install-vercel-cli:
     steps:
       - run:
-          name: Install Netlify CLI
-          command: make install-netlify-cli
+          name: Install Vercel CLI
+          command: make install-vercel-cli
 
 jobs:
   verify:
@@ -100,7 +100,7 @@ jobs:
     steps:
       - checkout
       - setup
-      - setup-netlify
+      - setup-vercel
 
       - run:
           name: Verify Deploy
@@ -138,17 +138,18 @@ jobs:
     steps:
       - checkout
       - setup
-      - setup-netlify
+      - setup-vercel
 
       - attach_workspace:
           at: .
       
       - run:
-          name: Deploy To Netlify
+          name: Deploy To Vercel
           command: >
             make ci-deploy 
-            id=$NETLIFY_SITE_ID 
-            token=$NETLIFY_ACCESS_TOKEN
+            org=$VERCEL_ORG_ID 
+            project=$VERCEL_PROJECT_ID
+            token=$VERCEL_TOKEN
 
 workflows:
   verify:
