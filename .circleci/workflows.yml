@@ -140,7 +140,6 @@ jobs:
       - setup
       - setup-git
       - setup-vercel
-      - install-hugo
 
       # - attach_workspace:
       #     at: .
