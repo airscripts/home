@@ -120,17 +120,6 @@ jobs:
           name: Build Site
           command: make ci-build
 
-      # - when:
-      #     condition: 
-      #       equal: [ main, << pipeline.git.branch >>]
-
-      #     steps:
-      #       - persist_to_workspace:
-      #           root: .
-
-      #           paths:
-      #             - ./public
-
   deploy:
     executor: base
     resource_class: small
@@ -140,9 +129,6 @@ jobs:
       - setup
       - setup-git
       - setup-vercel
-
-      # - attach_workspace:
-      #     at: .
       
       - run:
           name: Deploy To Vercel
