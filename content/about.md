@@ -26,5 +26,5 @@ I’m deeply involved in **open source**, where I enjoy building projects that a
 
 If you’re reaching out for freelance work, advice, or just to connect, feel free to email me and include the word `dinosaur` so I know you made it this far.
 
-> To make something special, you just have to believe it's special.  
-> *Mr. Ping, Kung Fu Panda*
+*To make something special, you just have to believe that it is special.*  
+*Mr. Ping, Kung Fu Panda*
