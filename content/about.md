@@ -5,6 +5,7 @@ date: "2023-03-01"
 author: "Airscript"
 categories: ["general"]
 tags: ["airscript", "about"]
+images: ["/logo-open-graph.png"]
 summary: "About page of airscript.it where I tell, briefly, who I am."
 
 ---
